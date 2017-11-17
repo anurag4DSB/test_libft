@@ -97,4 +97,9 @@ int					ft_countwords(char const *str, char c);
 int					ft_intlen(int num);
 int					ft_strstartswith(char *s1, char *s2);
 
+# define ISSPACE(c) (c == ' ' || c == '\t' || c == '\n' || ISSPACE2(c))
+# define ISSPACE2(c) (c == '\r' || c == '\v' || c == '\f')
+# define ISDIGIT(c) (c >= '0' && c <= '9')
+# define ABS(x) ((x) < 0 ? -(x) : (x))
+
 #endif
